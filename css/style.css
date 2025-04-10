@@ -30,6 +30,7 @@ header {
 header button {
     background-color: transparent;
     border: none;
+    margin-left: 284px;
 }
 
 .profile {
@@ -49,7 +50,11 @@ header button {
     border: 3px solid white;
 }
 
-
+.img-div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
 
 .img-div::before {
     content: "";
@@ -106,20 +111,26 @@ aside {
 .a-ul {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .a-ul li {
     height: 56px;
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 .a-ul li a {
     display: flex;
-    gap: 27px;
-    padding: 0 24px;
+    align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.a-ul li a img {
+    padding: 0 24px;
+    margin: 0 24px;
 }
 
 .a-ul li a span {
@@ -129,4 +140,93 @@ aside {
     line-height: 20px;
     letter-spacing: 0.2px;
     text-align: left;
+}
+
+#section-1 {
+    padding-top: 128px;
+    padding-left: 283px;
+    padding-right: 20px;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text h1 {
+    color: rgb(0, 0, 0);
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.btns {
+    display: flex;
+    gap: 32px;
+}
+
+.btns button {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 35px;
+    border: none;
+}
+
+.btns :nth-child(2) {
+    color: white;
+    background: rgb(16, 205, 69);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr th {
+    max-width: 20%;
+    height: 66px;
+    text-align: left;
+    padding-left: 20px;
+    color: rgb(135, 135, 135);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+td img {
+    width: 36px;
+    height: 34px;
+}
+
+thead tr{
+    background-color: #fff !important;
+}
+
+td {
+    padding-left: 40px;
+    text-align: left;
+}
+
+tr{
+    height: 66px;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(238, 242, 245);
+}
+
+tbody tr td :nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: nowrap;
 }
