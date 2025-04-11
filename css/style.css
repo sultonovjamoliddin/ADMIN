@@ -149,11 +149,70 @@ aside {
     transition: 0.4s;
 }
 
+.check {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    appearance: none;
+  }
+  .check::after {
+    content: "";
+    display: block;
+    /* margin-left: 7.5px;
+    margin-top: 5px;
+    width: 30px;
+    height: 20px;
+    border-left: 5px solid red;
+    border-bottom: 5px solid red; 
+    transform: rotate(-45deg) scale(0); */
+    margin-top: 12.5px;
+    margin-left: 12.5px;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    transform: scale(0);
+    transition: 0.5s;
+    /* display: none; */
+  }
+  .check:checked::after {
+    transform: scale(1);
+    /* display: block; */
+    /* transform: rotate(-45deg) scale(1); */
+  }
+  
+  .switch {
+    appearance: none;
+    padding: 5px;
+    width: 30px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: grey;
+  }
+  .switch::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    transition: 0.5s;
+  }
+  .switch:checked::after {
+    margin-left: 10px;
+    background-color: green;
+  }
+
 .main {
     padding-top: 128px;
     padding-left: 283px;
     padding-right: 20px;
     transition: 0.4s;
+}
+
+.input{
+    margin-top: 300px;
+    margin-left: 300px;
 }
 
 .text {
@@ -265,4 +324,8 @@ tbody tr td :nth-child(1) {
 
 .close{
     transition: 0.4s;
+}
+
+.dark{
+    background-color: black;
 }

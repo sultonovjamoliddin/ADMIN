@@ -13,3 +13,10 @@ if (innerWidth <= 1000) {
 } else {
   sidebar.classList.remove("close");
 }
+
+const body = document.body;
+const modeToggle = document.querySelector(".switch");
+
+modeToggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
